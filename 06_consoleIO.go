@@ -51,4 +51,5 @@ func main() {
 	// Fscan, Fscanf, Fscanln -> Scans from io reader.
 	// Sscan, Sscanf, Sscanln -> Scans from argument string
 	
+	fmt.Println("Thank you, see you in next tutorial.")
 }
