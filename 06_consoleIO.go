@@ -4,6 +4,8 @@ package main
 
 import (
 	"fmt"
+	"bufio"
+	"os"
 )
 
 func main() {
@@ -50,6 +52,12 @@ func main() {
 
 	// Fscan, Fscanf, Fscanln -> Scans from io reader.
 	// Sscan, Sscanf, Sscanln -> Scans from argument string
+
+	fmt.Println("Reading the whole line")
+	
+	inline := bufio.NewReader(os.Stdin)
+	line, _ := inline.ReadString('\n')
+	fmt.Println(line)
 	
 	fmt.Println("Thank you, see you in next tutorial.")
 }
