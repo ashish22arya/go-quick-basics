@@ -26,4 +26,6 @@ func main() {
 		action := recover()
 		fmt.Println(action)
 	}()
+
+	fmt.Println("Thanks, see you in next tutorial.")
 }

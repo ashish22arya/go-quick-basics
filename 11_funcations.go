@@ -48,6 +48,7 @@ func main() {
 	// User defined function type: For ex.
 	// type myFunc func(int) int
 	
+	fmt.Println("Thanks, see you in next tutorial.")
 }
 
 func simpleFunc() {

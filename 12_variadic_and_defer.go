@@ -29,6 +29,8 @@ func main() {
 
 	deferLifo()
 	fmt.Println()
+
+	fmt.Println("Thanks, see you in next tutorial.")
 }
 
 func simpleVariadic(s ...string) {
