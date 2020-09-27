@@ -40,8 +40,13 @@ func main() {
 	}
 
 	// High order functions: Function that accept function as an argument.
+						//  or returns a function as output 
 
+	square := squareFunc(4)
+	fmt.Println(square(3))
 
+	// User defined function type: For ex.
+	// type myFunc func(int) int
 	
 }
 
@@ -67,4 +72,10 @@ func updateData(name *string, age *int) {
 	*name = *name + " Arya"
 	*age += 2
 	return
+}
+
+func squareFunc(i int) func(int) int {
+	return func(int) int {
+		return i * i
+	}
 }
